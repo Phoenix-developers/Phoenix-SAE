@@ -1,0 +1,27 @@
+body {
+    padding: 60px 0px 0px 0px;
+    z-index: 0;
+}
+.navbar-dark {
+    background-color: black;
+}
+.navbar-nav {
+    padding-top: 5px;
+    height: 50px;
+}
+.row-content {
+    margin: 0px auto;
+    padding: 50px 0px;
+    border-bottom: 1px ridge;
+    min-height: 300px;
+}
+header {
+    width: 100%;
+}
+.footer {
+    margin: 0px auto;
+    padding: 20px 0px;
+    background-color: black;
+    color: #cbd1db;
+    width: 100%;
+}
