@@ -13,8 +13,11 @@ body {
     margin: 0px auto;
     padding: 50px 0px;
     border-bottom: 1px ridge;
-    min-height: 300px;
 }
+.row-content p {
+  line-height: normal;
+}
+
 header {
     width: 100%;
 }
@@ -24,4 +27,64 @@ header {
     background-color: black;
     color: #cbd1db;
     width: 100%;
+}
+
+/* code for profiles in teams */
+
+.content {
+  width: 50%;
+  margin: 4px 25% 4px 25%;
+  background-color: #aeb3b8;
+  border-radius: 5px;
+  padding: 4px;
+}
+
+.content .content-1 {
+  padding: 0px;
+  border: 1px solid #aeb3b8;
+  border-radius: 5px;
+  margin: 10px;
+  background-color: white;
+}
+
+.content .content-1 .content-head {
+  padding: 2%;
+}
+
+
+.content .content-1 .content-body .content-head a img {
+  float: right;
+  width: 30px;
+  height: 30px;
+  padding: 0px;
+  margin: 0px;
+}
+
+.content .content-1 .content-body {
+  padding: 20px;
+  height: 100px;
+}
+
+.content .content-1 .content-body a img {
+  border-radius: 5px;
+  float: left;
+}
+
+.content .content-1 .content-body .image-side {
+  width: 130px;
+  height: 60px;
+  margin-left: 10px;
+  margin-top: 0px;
+  float: left;
+}
+
+.content .content-1 .content-body .image-side b, p {
+  line-height: 0.5;
+  font-size: 0.8em;
+}
+
+.content .content-1 .content-body .side {
+  width: 70px;
+  height: 60px;
+  float: right;
 }
