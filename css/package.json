@@ -1,0 +1,30 @@
+{
+  "name": "phoenix-sae",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Phoenix-developers/Phoenix-SAE.git"
+  },
+  "author": "Neel and Vasudev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Phoenix-developers/Phoenix-SAE/issues"
+  },
+  "homepage": "https://github.com/Phoenix-developers/Phoenix-SAE#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.2",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.5.1",
+    "js": "^0.1.0",
+    "package-lock.json": "^1.0.0",
+    "package.json": "^2.0.1",
+    "popper.js": "^1.16.1"
+  }
+}
