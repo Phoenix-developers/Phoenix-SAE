@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/fav-icon/favicon.ico" type="image/x-icon">
+    <title>Phoenix SAE</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <style>
+        .row {
+            display : flex;
+            width : 100%;
+            justify-content : space-around;
+        }
+        .card-heading {
+            text-align : center;
+            padding-top : 5px;
+        }
+        .card {
+          box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+          transition: 0.3s;
+          width: 40%;
+          margin-bottom : 20px;
+        }
+        
+        .card:hover {
+          box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+        }
+        
+        .container {
+          padding: 2px 16px;
+        }
+        .tooltip {
+          position: relative;
+          display: inline-block;
+          border-bottom: 1px dotted black;
+        }
+        
+        .tooltip .tooltiptext-left {
+            overflow : hidden;
+            max-height : 110%;
+          visibility: hidden;
+          background-color: black;
+          color: #fff;
+          text-align: center;
+          border-radius: 6px;
+          padding: 5px 0;
+        
+          /* Position the tooltip */
+          position: absolute;
+          z-index: 1;
+          top : -10%;
+          left: 110%;
+          
+          width: 120%;
+          /*
+              to keep the tooltip over itself then put :
+            top:0;
+            left:0;
+              width: 100%;
+          */
+        }
+        
+        .tooltip .tooltiptext-right {
+            overflow : hidden;
+            max-height : 110%;
+          visibility: hidden;
+          background-color: black;
+          color: #fff;
+          text-align: center;
+          border-radius: 6px;
+          padding: 5px 0;
+        
+          /* Position the tooltip */
+          position: absolute;
+          z-index: 1;
+          top : -10%;
+          right: 110%;
+          
+          width: 120%;
+          /*
+              to keep the tooltip over itself then put :
+            top:0;
+            left:0;
+              width: 100%;
+          */
+        }
+        
+        
+        .tooltip:hover .tooltiptext-left , .tooltip:hover .tooltiptext-right {
+          visibility: visible;
+        }
+        
+            /* laptop View */
+        @media( min-width : 769px ) {
+            .card {
+                width : 30%;
+            }
+        }
+        
+            /* Mobile View */
+        @media( max-width : 425px ) {
+            .card {
+                width : 100%;
+            }
+            .row {
+                display: flex;
+          flex-direction: column;
+            }
+            .card:focus {
+                  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            }
+            .tooltip:focus .tooltiptext-left , .tooltip:focus .tooltiptext-right {
+                  visibility: visible;
+            }
+            .tooltip-left , .tooltip-right {
+                width : 100%;
+                top : 0;
+                left : 0;
+            }
+        }
+        </style>
+
+</head>
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark" >
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+          data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+        </button>
+       
+       <div class="collapse navbar-collapse" id="navbarCollapse">
+         <a class="navbar-brand" href="#"><img src="img/aero-logo-black.jpg" height="40" width="30">&nbsp;</a>
+          <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Home </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Contact Us</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Departments</a><span class="sr-only">(current)</span>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Achievements</a>
+            </li>
+             <li class="nav-item">
+                <a class="nav-link" href="#">Projects</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Gallery</a>
+            </li>
+            
+          </ul>
+       
+        </div>
+    </nav>
+</header>
+        
+<!--
+    Write the code for Departments HERE!
+-->
+
+    <section class="departments container">
+        <div class="row">
+            <div class="card">
+              <div class="card-heading">
+                  <h2>Card</h2>
+              </div>
+              <div class="card-body tooltip">
+                  <img src="img_avatar.png" alt="Avatar" style="width:100%">
+                  <div class="container">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris cursus mauris quis nibh lobortis euismod. Pellentesque pharetra vulputate luctus. Nam vitae congue ligula. Mauris lobortis suscipit lacus a tincidunt. Aenean turpis eros, efficitur non nulla non, mollis rhoncus ligula. Fusce fermentum sed justo eget tempor. Nulla convallis lacus a nulla varius, non auctor massa consequat. Duis commodo felis porttitor, mollis arcu sit amet, vulputate urna. Etiam eu dolor sed nulla consequat aliquam. Maecenas mollis imperdiet posuere. Vivamus id rhoncus nisl. Curabitur tempus vulputate nibh non mattis. Aliquam non augue pellentesque, condimentum elit id, mollis dolor.</p> 
+                  </div>
+                      <span class="tooltiptext-left"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris cursus mauris quis nibh lobortis euismod. Pellentesque pharetra vulputate luctus. Nam vitae congue ligula. Mauris lobortis suscipit lacus a tincidunt. Aenean turpis eros, efficitur non nulla non, mollis rhoncus ligula. Fusce fermentum sed justo eget tempor. Nulla convallis lacus a nulla varius, non auctor massa consequat. Duis commodo felis porttitor, mollis arcu sit amet, vulputate urna. Etiam eu dolor sed nulla consequat aliquam. Maecenas mollis imperdiet posuere. Vivamus id rhoncus nisl. Curabitur tempus vulputate nibh non mattis. Aliquam non augue pellentesque, condimentum elit id, mollis dolor.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris cursus mauris quis nibh lobortis euismod. Pellentesque pharetra vulputate luctus. Nam vitae congue ligula. Mauris lobortis suscipit lacus a tincidunt. Aenean turpis eros, efficitur non nulla non, mollis rhoncus ligula. Fusce fermentum sed justo eget tempor. Nulla convallis lacus a nulla varius, non auctor massa consequat. Duis commodo felis porttitor, mollis arcu sit amet, vulputate urna. Etiam eu dolor sed nulla consequat aliquam. Maecenas mollis imperdiet posuere. Vivamus id rhoncus nisl. Curabitur tempus vulputate nibh non mattis. Aliquam non augue pellentesque, condimentum elit id, mollis dolor.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris cursus mauris quis nibh lobortis euismod. Pellentesque pharetra vulputate luctus. Nam vitae congue ligula. Mauris lobortis suscipit lacus a tincidunt. Aenean turpis eros, efficitur non nulla non, mollis rhoncus ligula. Fusce fermentum sed justo eget tempor. Nulla convallis lacus a nulla varius, non auctor massa consequat. Duis commodo felis porttitor, mollis arcu sit amet, vulputate urna. Etiam eu dolor sed nulla consequat aliquam. Maecenas mollis imperdiet posuere. Vivamus id rhoncus nisl. Curabitur tempus vulputate nibh non mattis. Aliquam non augue pellentesque, condimentum elit id, mollis dolor.</p>
+                  </span>
+              </div>
+            </div>
+        
+          <div class="card">
+              <div class="card-heading">
+                  <h2>Card</h2>
+              </div>
+              <div class="card-body tooltip">
+                  <img src="img_avatar.png" alt="Avatar" style="width:100%">
+                  <div class="container">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris cursus mauris quis nibh lobortis euismod. Pellentesque pharetra vulputate luctus. Nam vitae congue ligula. Mauris lobortis suscipit lacus a tincidunt. Aenean turpis eros, efficitur non nulla non, mollis rhoncus ligula. Fusce fermentum sed justo eget tempor. Nulla convallis lacus a nulla varius, non auctor massa consequat. Duis commodo felis porttitor, mollis arcu sit amet, vulputate urna. Etiam eu dolor sed nulla consequat aliquam. Maecenas mollis imperdiet posuere. Vivamus id rhoncus nisl. Curabitur tempus vulputate nibh non mattis. Aliquam non augue pellentesque, condimentum elit id, mollis dolor.</p> 
+                  </div>
+                      <span class="tooltiptext-right"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris cursus mauris quis nibh lobortis euismod. Pellentesque pharetra vulputate luctus. Nam vitae congue ligula. Mauris lobortis suscipit lacus a tincidunt. Aenean turpis eros, efficitur non nulla non, mollis rhoncus ligula. Fusce fermentum sed justo eget tempor. Nulla convallis lacus a nulla varius, non auctor massa consequat. Duis commodo felis porttitor, mollis arcu sit amet, vulputate urna. Etiam eu dolor sed nulla consequat aliquam. Maecenas mollis imperdiet posuere. Vivamus id rhoncus nisl. Curabitur tempus vulputate nibh non mattis. Aliquam non augue pellentesque, condimentum elit id, mollis dolor.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris cursus mauris quis nibh lobortis euismod. Pellentesque pharetra vulputate luctus. Nam vitae congue ligula. Mauris lobortis suscipit lacus a tincidunt. Aenean turpis eros, efficitur non nulla non, mollis rhoncus ligula. Fusce fermentum sed justo eget tempor. Nulla convallis lacus a nulla varius, non auctor massa consequat. Duis commodo felis porttitor, mollis arcu sit amet, vulputate urna. Etiam eu dolor sed nulla consequat aliquam. Maecenas mollis imperdiet posuere. Vivamus id rhoncus nisl. Curabitur tempus vulputate nibh non mattis. Aliquam non augue pellentesque, condimentum elit id, mollis dolor.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris cursus mauris quis nibh lobortis euismod. Pellentesque pharetra vulputate luctus. Nam vitae congue ligula. Mauris lobortis suscipit lacus a tincidunt. Aenean turpis eros, efficitur non nulla non, mollis rhoncus ligula. Fusce fermentum sed justo eget tempor. Nulla convallis lacus a nulla varius, non auctor massa consequat. Duis commodo felis porttitor, mollis arcu sit amet, vulputate urna. Etiam eu dolor sed nulla consequat aliquam. Maecenas mollis imperdiet posuere. Vivamus id rhoncus nisl. Curabitur tempus vulputate nibh non mattis. Aliquam non augue pellentesque, condimentum elit id, mollis dolor.</p>
+                  </span>
+              </div>
+          </div>
+        </div>
+        <div class="row">
+            <div class="card">
+              <div class="card-heading">
+                  <h2>Card</h2>
+              </div>
+              <div class="card-body tooltip">
+                  <img src="img_avatar.png" alt="Avatar" style="width:100%">
+                  <div class="container">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris cursus mauris quis nibh lobortis euismod. Pellentesque pharetra vulputate luctus. Nam vitae congue ligula. Mauris lobortis suscipit lacus a tincidunt. Aenean turpis eros, efficitur non nulla non, mollis rhoncus ligula. Fusce fermentum sed justo eget tempor. Nulla convallis lacus a nulla varius, non auctor massa consequat. Duis commodo felis porttitor, mollis arcu sit amet, vulputate urna. Etiam eu dolor sed nulla consequat aliquam. Maecenas mollis imperdiet posuere. Vivamus id rhoncus nisl. Curabitur tempus vulputate nibh non mattis. Aliquam non augue pellentesque, condimentum elit id, mollis dolor.</p> 
+                  </div>
+                      <span class="tooltiptext-left"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris cursus mauris quis nibh lobortis euismod. Pellentesque pharetra vulputate luctus. Nam vitae congue ligula. Mauris lobortis suscipit lacus a tincidunt. Aenean turpis eros, efficitur non nulla non, mollis rhoncus ligula. Fusce fermentum sed justo eget tempor. Nulla convallis lacus a nulla varius, non auctor massa consequat. Duis commodo felis porttitor, mollis arcu sit amet, vulputate urna. Etiam eu dolor sed nulla consequat aliquam. Maecenas mollis imperdiet posuere. Vivamus id rhoncus nisl. Curabitur tempus vulputate nibh non mattis. Aliquam non augue pellentesque, condimentum elit id, mollis dolor.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris cursus mauris quis nibh lobortis euismod. Pellentesque pharetra vulputate luctus. Nam vitae congue ligula. Mauris lobortis suscipit lacus a tincidunt. Aenean turpis eros, efficitur non nulla non, mollis rhoncus ligula. Fusce fermentum sed justo eget tempor. Nulla convallis lacus a nulla varius, non auctor massa consequat. Duis commodo felis porttitor, mollis arcu sit amet, vulputate urna. Etiam eu dolor sed nulla consequat aliquam. Maecenas mollis imperdiet posuere. Vivamus id rhoncus nisl. Curabitur tempus vulputate nibh non mattis. Aliquam non augue pellentesque, condimentum elit id, mollis dolor.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris cursus mauris quis nibh lobortis euismod. Pellentesque pharetra vulputate luctus. Nam vitae congue ligula. Mauris lobortis suscipit lacus a tincidunt. Aenean turpis eros, efficitur non nulla non, mollis rhoncus ligula. Fusce fermentum sed justo eget tempor. Nulla convallis lacus a nulla varius, non auctor massa consequat. Duis commodo felis porttitor, mollis arcu sit amet, vulputate urna. Etiam eu dolor sed nulla consequat aliquam. Maecenas mollis imperdiet posuere. Vivamus id rhoncus nisl. Curabitur tempus vulputate nibh non mattis. Aliquam non augue pellentesque, condimentum elit id, mollis dolor.</p>
+                  </span>
+              </div>
+            </div>
+        
+          <div class="card">
+              <div class="card-heading">
+                  <h2>Card</h2>
+              </div>
+              <div class="card-body tooltip">
+                  <img src="img_avatar.png" alt="Avatar" style="width:100%">
+                  <div class="container">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris cursus mauris quis nibh lobortis euismod. Pellentesque pharetra vulputate luctus. Nam vitae congue ligula. Mauris lobortis suscipit lacus a tincidunt. Aenean turpis eros, efficitur non nulla non, mollis rhoncus ligula. Fusce fermentum sed justo eget tempor. Nulla convallis lacus a nulla varius, non auctor massa consequat. Duis commodo felis porttitor, mollis arcu sit amet, vulputate urna. Etiam eu dolor sed nulla consequat aliquam. Maecenas mollis imperdiet posuere. Vivamus id rhoncus nisl. Curabitur tempus vulputate nibh non mattis. Aliquam non augue pellentesque, condimentum elit id, mollis dolor.</p> 
+                  </div>
+                      <span class="tooltiptext-right"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris cursus mauris quis nibh lobortis euismod. Pellentesque pharetra vulputate luctus. Nam vitae congue ligula. Mauris lobortis suscipit lacus a tincidunt. Aenean turpis eros, efficitur non nulla non, mollis rhoncus ligula. Fusce fermentum sed justo eget tempor. Nulla convallis lacus a nulla varius, non auctor massa consequat. Duis commodo felis porttitor, mollis arcu sit amet, vulputate urna. Etiam eu dolor sed nulla consequat aliquam. Maecenas mollis imperdiet posuere. Vivamus id rhoncus nisl. Curabitur tempus vulputate nibh non mattis. Aliquam non augue pellentesque, condimentum elit id, mollis dolor.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris cursus mauris quis nibh lobortis euismod. Pellentesque pharetra vulputate luctus. Nam vitae congue ligula. Mauris lobortis suscipit lacus a tincidunt. Aenean turpis eros, efficitur non nulla non, mollis rhoncus ligula. Fusce fermentum sed justo eget tempor. Nulla convallis lacus a nulla varius, non auctor massa consequat. Duis commodo felis porttitor, mollis arcu sit amet, vulputate urna. Etiam eu dolor sed nulla consequat aliquam. Maecenas mollis imperdiet posuere. Vivamus id rhoncus nisl. Curabitur tempus vulputate nibh non mattis. Aliquam non augue pellentesque, condimentum elit id, mollis dolor.</p>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris cursus mauris quis nibh lobortis euismod. Pellentesque pharetra vulputate luctus. Nam vitae congue ligula. Mauris lobortis suscipit lacus a tincidunt. Aenean turpis eros, efficitur non nulla non, mollis rhoncus ligula. Fusce fermentum sed justo eget tempor. Nulla convallis lacus a nulla varius, non auctor massa consequat. Duis commodo felis porttitor, mollis arcu sit amet, vulputate urna. Etiam eu dolor sed nulla consequat aliquam. Maecenas mollis imperdiet posuere. Vivamus id rhoncus nisl. Curabitur tempus vulputate nibh non mattis. Aliquam non augue pellentesque, condimentum elit id, mollis dolor.</p>
+                  </span>
+              </div>
+          </div>
+        </div>
+    </section>
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-4 offset-1 col-sm-2">
+                    <h5>Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 offset-1 col-sm-4">
+                    <h5>Our Address</h5>
+                    <address>
+                        SVNIT Campus, Athwa<br>
+                        Surat, Gujarat - 395 007<br>
+                      <i class="fa fa-envelope fa-lg"></i> :
+                      <a href="mailto:abcd@gmail.com">abcd@gmail.com</a>
+		           </address>
+                </div>
+                <div class="col-12 col-sm-4">
+                    <h5><center>Connect with Us</center></h5>
+                    <div class="text-center mt-4">
+                        <a class="btn btn-social-icon btn-google mr-2" href="http://google.com/+"><i class="fa fa-google-plus"></i></a>
+                        <a class="btn btn-social-icon btn-facebook mr-2" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>
+                        <a class="btn btn-social-icon btn-linkedin mr-2" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>
+                        <a class="btn btn-social-icon btn-twitter mr-2" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                        <a class="btn btn-social-icon btn-google mr-2" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                        <a class="btn btn-social-icon mr-2" href="mailto:"><i class="fa fa-envelope fa-lg text-white"></i></a>
+                    </div>
+                </div>
+           </div>
+           <div class="row justify-content-center">
+                <div class="col-auto mt-4">
+                    <p>© Copyright 2020 Phoenix SAE, SVNIT</p>
+                </div>
+           </div>
+        </div>
+    </footer>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS. 
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS.   (Links) -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    
+    <script src="owl/jquery.min.js"></script>
+    <script src="css/bootstrap.bundle.js"></script>
+</body>
+</html>
