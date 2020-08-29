@@ -8,6 +8,9 @@ body {
 .nav-link {
 padding-right: 40px;
 }
+.nav-item{
+  margin-left: 35px;
+}
 
 .row-content {
   margin: 0px auto;
