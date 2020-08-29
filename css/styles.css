@@ -4,6 +4,17 @@ body {
 .navbar-dark {
   background-color: black;
 }
+.navbar-dark{
+  background: black;
+}
+.navbar-collapse{
+  margin-left: 40px;
+}
+
+.nav-item{
+margin-left: 35px;
+}
+
 
 .nav-link {
 padding-right: 40px;
