@@ -4,22 +4,21 @@ body {
 .navbar-dark {
   background-color: black;
 }
-.navbar-dark{
+.navbar-dark {
   background: black;
 }
-.navbar-collapse{
+.navbar-collapse {
   margin-left: 40px;
 }
 
-.nav-item{
-margin-left: 35px;
+.nav-item {
+  margin-left: 35px;
 }
-
 
 .nav-link {
-padding-right: 40px;
+  padding-right: 40px;
 }
-.nav-item{
+.nav-item {
   margin-left: 35px;
 }
 
@@ -28,17 +27,17 @@ padding-right: 40px;
   padding: 50px 0px;
   border-bottom: 1px ridge;
 }
-.divider{
+.divider {
   background-color: #3a709c;
   margin-top: 0px;
   margin-bottom: 0px;
   width: 100%;
   height: 1px;
   display: block;
-  padding:0px;
+  padding: 0px;
 }
 .row-content p {
-line-height: normal;
+  line-height: normal;
 }
 
 header {
@@ -55,29 +54,28 @@ header {
 /* code for profiles in teams */
 
 .content {
-width: 50%;
-margin: 4px 25% 4px 25%;
-background-color: #aeb3b8;
-border-radius: 5px;
-padding: 4px;
+  width: 50%;
+  margin: 4px 25% 4px 25%;
+  background-color: #aeb3b8;
+  border-radius: 5px;
+  padding: 4px;
 }
 
 /* Contact-Us*/
-.container-fluid{
-  background-color:rgb(106, 194, 253);
+.container-fluid {
+  background-color: rgb(106, 194, 253);
   text-align: center;
   margin-bottom: 30%;
   padding-bottom: 5%;
 }
 
-.col-sm-4 {
+.contact-us-content {
   margin-top: 5%;
   padding-right: 3%;
   padding-left: 3%;
 }
 
-.contact-us{
-    text-align: center;
-    padding-top: 3%;
+.contact-us {
+  text-align: center;
+  padding-top: 3%;
 }
-
