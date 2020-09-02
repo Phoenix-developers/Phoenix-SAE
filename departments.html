@@ -45,11 +45,11 @@
           margin-bottom : 40px;
           margin-right: 40px;
         }
-        
+
         .CARD:hover {
           box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
         }
-        
+
         .CONTAINER {
           padding: 2px 16px;
         }
@@ -58,7 +58,7 @@
           display: inline-block;
           border-bottom: 1px dotted black;
         }
-        
+
         .TOOLTIP .tooltiptext-left {
             overflow : hidden;
             max-height : 110%;
@@ -68,14 +68,14 @@
           text-align: center;
           border-radius: 6px;
           padding: 5px 0;
-        
+
           /* Position the tooltip */
           position: absolute;
           z-index: 1;
           top : -5%;
-          left: 110%;
-          
-          width: 120%;
+          left: 0;
+
+          width: 100%;
           /*
               to keep the tooltip over itself then put :
             top:0;
@@ -83,7 +83,7 @@
               width: 100%;
           */
         }
-        
+
         .TOOLTIP .tooltiptext-right {
             overflow : hidden;
             max-height : 110%;
@@ -93,13 +93,13 @@
           text-align: center;
           border-radius: 6px;
           padding: 5px 0;
-        
+
           /* Position the tooltip */
           position: absolute;
           z-index: 1;
           top : -5%;
-          right: 110%;
-          
+          right: 0;
+
           width: 100%;
           /*
               to keep the tooltip over itself then put :
@@ -108,19 +108,28 @@
               width: 100%;
           */
         }
-        
-        
+
+
         .TOOLTIP:hover .tooltiptext-left , .TOOLTIP:hover .tooltiptext-right {
           visibility: visible;
+          animation-name: bottomToTop;
+          animation-duration: 2s;
         }
-        
+        @keyframes bottomToTop {
+          0%   {background-color:red; left:0px; top:80vh;}
+          25%  {background-color:yellow;}
+          50%  {background-color:blue;}
+          75%  {background-color:green;}
+          100% {background-color:red; left:0px; top:-5%;}
+        }
+
             /* laptop View */
         @media( min-width : 769px ) {
             .CARD {
                 width : 30%;
             }
         }
-        
+
             /* Mobile View */
         @media( max-width : 525px ) {
             .CARD {
@@ -166,9 +175,9 @@
           data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
            <span class="navbar-toggler-icon"></span>
          </button>
-         
+
          <div class="collapse navbar-collapse" id="navbarCollapse">
-          
+
             <ul class="navbar-nav mr-auto mt-2 mt-lg-0" style="margin-left: 20px;">
                <li class="nav-item">
                 <a class="nav-link" href="index.html">Home </a>
@@ -197,13 +206,13 @@
                 <li class="nav-item">
                   <a class="nav-link" href="#">Gallery</a>
                 </li>
-              
+
             </ul>
-         
+
           </div>
       </nav>
 </header>
-        
+
 <!--
     Write the code for Departments HERE!
 -->
@@ -220,7 +229,7 @@
               <div class="CARD-BODY TOOLTIP">
                   <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" style="width:100%">
                   <div class="CONTAINER">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris cursus mauris quis nibh lobortis euismod. Pellentesque pharetra vulputate luctus. Nam vitae congue ligula. Mauris lobortis suscipit lacus a tincidunt. Aenean turpis eros, efficitur non nulla non, mollis rhoncus ligula. Fusce fermentum sed justo eget tempor. Nulla convallis lacus a nulla varius, non auctor massa consequat. Duis commodo felis porttitor, mollis arcu sit amet, vulputate urna. Etiam eu dolor sed nulla consequat aliquam. Maecenas mollis imperdiet posuere. Vivamus id rhoncus nisl. Curabitur tempus vulputate nibh non mattis. Aliquam non augue pellentesque, condimentum elit id, mollis dolor.</p> 
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris cursus mauris quis nibh lobortis euismod. Pellentesque pharetra vulputate luctus. Nam vitae congue ligula. Mauris lobortis suscipit lacus a tincidunt. Aenean turpis eros, efficitur non nulla non, mollis rhoncus ligula. Fusce fermentum sed justo eget tempor. Nulla convallis lacus a nulla varius, non auctor massa consequat. Duis commodo felis porttitor, mollis arcu sit amet, vulputate urna. Etiam eu dolor sed nulla consequat aliquam. Maecenas mollis imperdiet posuere. Vivamus id rhoncus nisl. Curabitur tempus vulputate nibh non mattis. Aliquam non augue pellentesque, condimentum elit id, mollis dolor.</p>
                   </div>
                       <span class="tooltiptext-left"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris cursus mauris quis nibh lobortis euismod. Pellentesque pharetra vulputate luctus. Nam vitae congue ligula. Mauris lobortis suscipit lacus a tincidunt. Aenean turpis eros, efficitur non nulla non, mollis rhoncus ligula. Fusce fermentum sed justo eget tempor. Nulla convallis lacus a nulla varius, non auctor massa consequat. Duis commodo felis porttitor, mollis arcu sit amet, vulputate urna. Etiam eu dolor sed nulla consequat aliquam. Maecenas mollis imperdiet posuere. Vivamus id rhoncus nisl. Curabitur tempus vulputate nibh non mattis. Aliquam non augue pellentesque, condimentum elit id, mollis dolor.</p>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris cursus mauris quis nibh lobortis euismod. Pellentesque pharetra vulputate luctus. Nam vitae congue ligula. Mauris lobortis suscipit lacus a tincidunt. Aenean turpis eros, efficitur non nulla non, mollis rhoncus ligula. Fusce fermentum sed justo eget tempor. Nulla convallis lacus a nulla varius, non auctor massa consequat. Duis commodo felis porttitor, mollis arcu sit amet, vulputate urna. Etiam eu dolor sed nulla consequat aliquam. Maecenas mollis imperdiet posuere. Vivamus id rhoncus nisl. Curabitur tempus vulputate nibh non mattis. Aliquam non augue pellentesque, condimentum elit id, mollis dolor.</p>
@@ -228,7 +237,7 @@
                   </span>
               </div>
             </div>
-        
+
           <div class="CARD">
               <div class="CARD-HEADING">
                   <h2>Card</h2>
@@ -236,7 +245,7 @@
               <div class="CARD-BODY TOOLTIP">
                   <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" style="width:100%">
                   <div class="container">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris cursus mauris quis nibh lobortis euismod. Pellentesque pharetra vulputate luctus. Nam vitae congue ligula. Mauris lobortis suscipit lacus a tincidunt. Aenean turpis eros, efficitur non nulla non, mollis rhoncus ligula. Fusce fermentum sed justo eget tempor. Nulla convallis lacus a nulla varius, non auctor massa consequat. Duis commodo felis porttitor, mollis arcu sit amet, vulputate urna. Etiam eu dolor sed nulla consequat aliquam. Maecenas mollis imperdiet posuere. Vivamus id rhoncus nisl. Curabitur tempus vulputate nibh non mattis. Aliquam non augue pellentesque, condimentum elit id, mollis dolor.</p> 
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris cursus mauris quis nibh lobortis euismod. Pellentesque pharetra vulputate luctus. Nam vitae congue ligula. Mauris lobortis suscipit lacus a tincidunt. Aenean turpis eros, efficitur non nulla non, mollis rhoncus ligula. Fusce fermentum sed justo eget tempor. Nulla convallis lacus a nulla varius, non auctor massa consequat. Duis commodo felis porttitor, mollis arcu sit amet, vulputate urna. Etiam eu dolor sed nulla consequat aliquam. Maecenas mollis imperdiet posuere. Vivamus id rhoncus nisl. Curabitur tempus vulputate nibh non mattis. Aliquam non augue pellentesque, condimentum elit id, mollis dolor.</p>
                   </div>
                       <span class="tooltiptext-right"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris cursus mauris quis nibh lobortis euismod. Pellentesque pharetra vulputate luctus. Nam vitae congue ligula. Mauris lobortis suscipit lacus a tincidunt. Aenean turpis eros, efficitur non nulla non, mollis rhoncus ligula. Fusce fermentum sed justo eget tempor. Nulla convallis lacus a nulla varius, non auctor massa consequat. Duis commodo felis porttitor, mollis arcu sit amet, vulputate urna. Etiam eu dolor sed nulla consequat aliquam. Maecenas mollis imperdiet posuere. Vivamus id rhoncus nisl. Curabitur tempus vulputate nibh non mattis. Aliquam non augue pellentesque, condimentum elit id, mollis dolor.</p>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris cursus mauris quis nibh lobortis euismod. Pellentesque pharetra vulputate luctus. Nam vitae congue ligula. Mauris lobortis suscipit lacus a tincidunt. Aenean turpis eros, efficitur non nulla non, mollis rhoncus ligula. Fusce fermentum sed justo eget tempor. Nulla convallis lacus a nulla varius, non auctor massa consequat. Duis commodo felis porttitor, mollis arcu sit amet, vulputate urna. Etiam eu dolor sed nulla consequat aliquam. Maecenas mollis imperdiet posuere. Vivamus id rhoncus nisl. Curabitur tempus vulputate nibh non mattis. Aliquam non augue pellentesque, condimentum elit id, mollis dolor.</p>
@@ -253,7 +262,7 @@
               <div class="CARD-BODY TOOLTIP">
                   <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" style="width:100%">
                   <div class="CONTAINER">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris cursus mauris quis nibh lobortis euismod. Pellentesque pharetra vulputate luctus. Nam vitae congue ligula. Mauris lobortis suscipit lacus a tincidunt. Aenean turpis eros, efficitur non nulla non, mollis rhoncus ligula. Fusce fermentum sed justo eget tempor. Nulla convallis lacus a nulla varius, non auctor massa consequat. Duis commodo felis porttitor, mollis arcu sit amet, vulputate urna. Etiam eu dolor sed nulla consequat aliquam. Maecenas mollis imperdiet posuere. Vivamus id rhoncus nisl. Curabitur tempus vulputate nibh non mattis. Aliquam non augue pellentesque, condimentum elit id, mollis dolor.</p> 
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris cursus mauris quis nibh lobortis euismod. Pellentesque pharetra vulputate luctus. Nam vitae congue ligula. Mauris lobortis suscipit lacus a tincidunt. Aenean turpis eros, efficitur non nulla non, mollis rhoncus ligula. Fusce fermentum sed justo eget tempor. Nulla convallis lacus a nulla varius, non auctor massa consequat. Duis commodo felis porttitor, mollis arcu sit amet, vulputate urna. Etiam eu dolor sed nulla consequat aliquam. Maecenas mollis imperdiet posuere. Vivamus id rhoncus nisl. Curabitur tempus vulputate nibh non mattis. Aliquam non augue pellentesque, condimentum elit id, mollis dolor.</p>
                   </div>
                       <span class="tooltiptext-left"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris cursus mauris quis nibh lobortis euismod. Pellentesque pharetra vulputate luctus. Nam vitae congue ligula. Mauris lobortis suscipit lacus a tincidunt. Aenean turpis eros, efficitur non nulla non, mollis rhoncus ligula. Fusce fermentum sed justo eget tempor. Nulla convallis lacus a nulla varius, non auctor massa consequat. Duis commodo felis porttitor, mollis arcu sit amet, vulputate urna. Etiam eu dolor sed nulla consequat aliquam. Maecenas mollis imperdiet posuere. Vivamus id rhoncus nisl. Curabitur tempus vulputate nibh non mattis. Aliquam non augue pellentesque, condimentum elit id, mollis dolor.</p>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris cursus mauris quis nibh lobortis euismod. Pellentesque pharetra vulputate luctus. Nam vitae congue ligula. Mauris lobortis suscipit lacus a tincidunt. Aenean turpis eros, efficitur non nulla non, mollis rhoncus ligula. Fusce fermentum sed justo eget tempor. Nulla convallis lacus a nulla varius, non auctor massa consequat. Duis commodo felis porttitor, mollis arcu sit amet, vulputate urna. Etiam eu dolor sed nulla consequat aliquam. Maecenas mollis imperdiet posuere. Vivamus id rhoncus nisl. Curabitur tempus vulputate nibh non mattis. Aliquam non augue pellentesque, condimentum elit id, mollis dolor.</p>
@@ -261,7 +270,7 @@
                   </span>
               </div>
             </div>
-        
+
           <div class="CARD">
               <div class="CARD-HEADING">
                   <h2>Card</h2>
@@ -269,7 +278,7 @@
               <div class="CARD-BODY TOOLTIP">
                   <img src="https://www.w3schools.com/howto/img_avatar.png" alt="Avatar" style="width:100%">
                   <div class="CONTAINER">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris cursus mauris quis nibh lobortis euismod. Pellentesque pharetra vulputate luctus. Nam vitae congue ligula. Mauris lobortis suscipit lacus a tincidunt. Aenean turpis eros, efficitur non nulla non, mollis rhoncus ligula. Fusce fermentum sed justo eget tempor. Nulla convallis lacus a nulla varius, non auctor massa consequat. Duis commodo felis porttitor, mollis arcu sit amet, vulputate urna. Etiam eu dolor sed nulla consequat aliquam. Maecenas mollis imperdiet posuere. Vivamus id rhoncus nisl. Curabitur tempus vulputate nibh non mattis. Aliquam non augue pellentesque, condimentum elit id, mollis dolor.</p> 
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris cursus mauris quis nibh lobortis euismod. Pellentesque pharetra vulputate luctus. Nam vitae congue ligula. Mauris lobortis suscipit lacus a tincidunt. Aenean turpis eros, efficitur non nulla non, mollis rhoncus ligula. Fusce fermentum sed justo eget tempor. Nulla convallis lacus a nulla varius, non auctor massa consequat. Duis commodo felis porttitor, mollis arcu sit amet, vulputate urna. Etiam eu dolor sed nulla consequat aliquam. Maecenas mollis imperdiet posuere. Vivamus id rhoncus nisl. Curabitur tempus vulputate nibh non mattis. Aliquam non augue pellentesque, condimentum elit id, mollis dolor.</p>
                   </div>
                       <span class="tooltiptext-right"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris cursus mauris quis nibh lobortis euismod. Pellentesque pharetra vulputate luctus. Nam vitae congue ligula. Mauris lobortis suscipit lacus a tincidunt. Aenean turpis eros, efficitur non nulla non, mollis rhoncus ligula. Fusce fermentum sed justo eget tempor. Nulla convallis lacus a nulla varius, non auctor massa consequat. Duis commodo felis porttitor, mollis arcu sit amet, vulputate urna. Etiam eu dolor sed nulla consequat aliquam. Maecenas mollis imperdiet posuere. Vivamus id rhoncus nisl. Curabitur tempus vulputate nibh non mattis. Aliquam non augue pellentesque, condimentum elit id, mollis dolor.</p>
                   <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris cursus mauris quis nibh lobortis euismod. Pellentesque pharetra vulputate luctus. Nam vitae congue ligula. Mauris lobortis suscipit lacus a tincidunt. Aenean turpis eros, efficitur non nulla non, mollis rhoncus ligula. Fusce fermentum sed justo eget tempor. Nulla convallis lacus a nulla varius, non auctor massa consequat. Duis commodo felis porttitor, mollis arcu sit amet, vulputate urna. Etiam eu dolor sed nulla consequat aliquam. Maecenas mollis imperdiet posuere. Vivamus id rhoncus nisl. Curabitur tempus vulputate nibh non mattis. Aliquam non augue pellentesque, condimentum elit id, mollis dolor.</p>
@@ -279,7 +288,7 @@
           </div>
         </div>
     </section>
-    
+
     <footer class="footer">
         <div class="container">
             <div class="row">
@@ -321,7 +330,7 @@
         </div>
     </footer>
 
-    <!-- jQuery first, then Popper.js, then Bootstrap JS. 
+    <!-- jQuery first, then Popper.js, then Bootstrap JS.
     <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
@@ -331,7 +340,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    
+
     <script src="owl/jquery.min.js"></script>
     <script src="css/bootstrap.bundle.js"></script>
 </body>
