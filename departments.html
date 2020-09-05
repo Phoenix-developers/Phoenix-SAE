@@ -75,8 +75,8 @@
         overflow: hidden;
         max-height: 110%;
         visibility: hidden;
-        background-color: black;
-        color: #fff;
+        background-color: #fff;
+        color: black;
         text-align: center;
         border-radius: 6px;
         padding: 5px 0;
@@ -100,8 +100,8 @@
         overflow: hidden;
         max-height: 110%;
         visibility: hidden;
-        background-color: black;
-        color: #fff;
+        background-color: #fff;
+        color: black;
         text-align: center;
         border-radius: 6px;
         padding: 5px 0;
@@ -124,28 +124,21 @@
       .TOOLTIP:hover .tooltiptext-left,
       .TOOLTIP:hover .tooltiptext-right {
         visibility: visible;
-        animation-name: bottomToTop;
+        animation-name: TopTobottom;
         animation-duration: 2s;
       }
-      @keyframes bottomToTop {
+      @keyframes TopTobottom {
         0% {
-          background-color: red;
-          left: 0px;
-          top: 80vh;
-        }
-        25% {
-          background-color: yellow;
-        }
-        50% {
-          background-color: blue;
-        }
-        75% {
-          background-color: green;
-        }
-        100% {
-          background-color: red;
+          background-color: #fff;
           left: 0px;
           top: -5%;
+          height: 0%;
+        }
+        100% {
+          background-color: #fff;
+          left: 0px;
+          top: -5%;
+          height: 100%;
         }
       }
 
