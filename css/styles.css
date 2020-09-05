@@ -79,3 +79,29 @@ header {
   text-align: center;
   padding-top: 3%;
 }
+
+form {
+  margin-left: 10%;
+}
+.question-img {
+  padding-left: 30%;
+  margin-top: 5%;
+  
+}
+.name {
+  font-size: 20px;
+}
+
+textarea {
+  resize: none;
+  width: 300px;
+  height: 150px;
+}
+
+#input-name {
+  width: 300px;
+}
+
+#email {
+  width: 300px;
+}
