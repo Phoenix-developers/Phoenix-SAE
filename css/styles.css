@@ -62,10 +62,9 @@ header {
 }
 
 /* Contact-Us*/
-.container-fluid {
+.container-fluid-pratik {
   background-color: rgb(106, 194, 253);
   text-align: center;
-  margin-bottom: 30%;
   padding-bottom: 5%;
 }
 
@@ -86,7 +85,7 @@ form {
 .question-img {
   padding-left: 30%;
   margin-top: 5%;
-  
+
 }
 .name {
   font-size: 20px;
